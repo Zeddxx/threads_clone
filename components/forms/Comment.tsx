@@ -14,8 +14,8 @@ import {
   FormLabel,
 } from "@/components/ui/form";
 
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 import { CommentValidation } from "@/lib/validations/thread";
 import { addCommentToThread } from "@/lib/actions/thread.actions";
@@ -59,9 +59,9 @@ function Comment({ threadId, currentUserImg, currentUserId }: Props) {
                 <Image
                   src={currentUserImg}
                   alt='current_user'
-                  height={48}
                   width={48}
-                  className="relative rounded-full object-cover"
+                  height={48}
+                  className='rounded-full object-cover'
                 />
               </FormLabel>
               <FormControl className='border-none bg-transparent'>
